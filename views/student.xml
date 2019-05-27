@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        
+        <record id="view_student_student_form_2_inh" model="ir.ui.view">
+            <field name="name">student.student.inherit</field>
+            <field name="model">student.student</field>
+            <field name="inherit_id" ref="school.view_student_student_form_2"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form/sheet/div[1]" position="after">
+                <!-- <field name="pid" position="after"> -->
+                <group>
+                    <group>
+                    
+                    <field name="ticket_test" widget="selection"/>
+
+                    </group>
+                </group>
+                </xpath>
+            </field>
+       </record>
+       
+   </data>
+</odoo>
